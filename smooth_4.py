@@ -9,7 +9,9 @@ def Hs(x, alpha=3):
     return (1 + np.exp(-alpha * x) + x * np.exp(-alpha * x)) / (1 + np.exp(-alpha * x)) ** 2
 
 plt.plot(x, H(x), label="heaviside step")
-plt.plot(x, Hs(x), label="Heaviside step smooth")
+for alpha in [0.5, 1, 2, 4, 8]:
+    plt.plot(x, Hs(x, alpha), label=f"Heaviside step smooth, $\\alpha={alpha}$")
 plt.legend(loc="upper left")
+plt.title("$H_s(x) = \\frac{1+e^{-\\alpha x}+xe^{-\\alpha x}}{\left(1+e^{-\\alpha x}\\right)^{2}}$")
 plt.show()
 
