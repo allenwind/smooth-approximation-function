@@ -7,3 +7,9 @@
 ## Heaviside step函数光滑近似
 
 ![](asset/Heaviside-step-approximation-total.png)
+
+
+
+## RELU光滑逼近
+
+![](asset/smooth-relu.png)
