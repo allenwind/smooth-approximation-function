@@ -2,7 +2,7 @@ import numpy as np
 from scipy.special import erf
 import matplotlib.pyplot as plt
 
-x = np.linspace(-3, 3, 10000)
+x = np.linspace(-1, 1, 10000)
 
 H = lambda x: np.heaviside(x, 0)
 
