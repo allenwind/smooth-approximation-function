@@ -12,4 +12,6 @@
 
 ## RELU光滑逼近
 
+relu衍生的六种激活函数对比，
+
 ![](asset/smooth-relu.png)

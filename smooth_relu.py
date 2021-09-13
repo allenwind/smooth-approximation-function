@@ -2,7 +2,7 @@ import numpy as np
 from scipy.special import erf
 import matplotlib.pyplot as plt
 
-x = np.linspace(-1, 1, 10000)
+x = np.linspace(-2, 2, 10000)
 
 H = lambda x: np.heaviside(x, 0)
 
@@ -21,9 +21,12 @@ def Hs4(x, sigma=0.5):
 def Hs5(x, gamma=0.1):
     return 0.5 + np.arctan(x / gamma) / np.pi
 
-plt.plot(x, x * H(x), label="heaviside step")
-for i in range(1, 6):
+def Hs6(x, alpha=2):
+    return 1 / (1 + np.exp(-x)) ** alpha
+
+plt.plot(x, x * H(x), label="relu")
+for i in range(1, 7):
     func = vars()[f"Hs{i}"]
-    plt.plot(x, x * func(x), label=f"Heaviside step smooth {i}")
+    plt.plot(x, x * func(x), label=f"relu smooth {i}")
 plt.legend(loc="upper left")
 plt.show()
