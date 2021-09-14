@@ -15,3 +15,11 @@
 relu衍生的六种激活函数对比，
 
 ![](asset/smooth-relu.png)
+
+
+
+## abs函数光滑逼近
+
+abs衍生的六种光滑逼近函数对比，
+
+![](asset/abs-smooth-demo-1-1.png)
