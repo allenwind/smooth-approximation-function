@@ -16,6 +16,10 @@ relu衍生的六种激活函数对比，
 
 ![](asset/smooth-relu.png)
 
+基于广义正态分布的relu衍生，
+
+![](asset/generalized_normal_relus.png)
+
 
 
 ## abs函数光滑逼近
