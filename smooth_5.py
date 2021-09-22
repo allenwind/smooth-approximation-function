@@ -10,7 +10,7 @@ def Hs(x, sigma=0.5):
     return 0.5 * (1 + erf(x / (sigma * np.sqrt(2))))
 
 plt.plot(x, H(x), label="heaviside step")
-for sigma in [1, 0.5, 0.2, 0.1, 0.01]:
+for sigma in [3, 2, 1, 0.5, 0.2, 0.1, 0.01]:
     plt.plot(x, Hs(x, sigma), label=f"Heaviside step smooth, $\sigma={sigma}$")
 plt.legend(loc="upper left")
 plt.title("$H_s(x) = \\frac {1}{2}\left[1+\operatorname {erf} \left({\\frac {x }{\sigma {\sqrt {2}}}}\\right)\\right]$")

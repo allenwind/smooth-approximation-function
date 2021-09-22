@@ -15,9 +15,11 @@ def generalized_normal(x, alpha, beta):
     return 0.5 + np.sign(x) * linc_gamma(np.abs(x / alpha) ** beta, 1 / beta) / (2 * gamma(1 / beta))
 
 x = np.linspace(-5, 5, 10000)
+H = lambda x: np.heaviside(x, 0)
 
 for i, alpha in enumerate([0.5, 1, 1.5, 2], start=1):
     plt.subplot(2, 2, i)
+    plt.plot(x, H(x), label="heaviside step")
     for beta in [0.5, 0.8, 1, 1.5, 2, 3, 8]:
         y = generalized_normal(x, alpha, beta)
         plt.plot(x, y, label=f"$\\alpha={alpha},\\beta={beta}$")
