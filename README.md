@@ -1,6 +1,6 @@
 # smooth-approximation-function
 
-一些函数的光滑逼近的实现与可视化。
+一些函数的光滑逼近的实现与可视化。相关的讨论见[函数光滑近似（4）：Heaviside step函数及其应用](https://allenwind.github.io/blog/15887/)。
 
 
 
